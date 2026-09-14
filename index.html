@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Big Hammock Brewery & Bites | Craft Brewpub & Asian Street Food in Ocala, FL</title>
+  <meta name="description" content="Ocala's premier downtown brewpub. Handcrafted beers, ramen bowls, bao buns, and Asian-fusion bites.">
+  <meta property="og:title" content="Big Hammock Brewery & Bites | Craft Brewpub & Asian Street Food in Ocala, FL">
+  <meta property="og:description" content="Ocala's premier downtown brewpub. Handcrafted beers, ramen bowls, bao buns, and Asian-fusion bites.">
+  <meta property="og:image" content="assets/images/logo.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <!-- Top Announcement Bar -->
+  <aside class="top-bar">
+    <div class="top-bar-inner">
+      <div class="top-bar-info">
+        <span class="status-pill open">
+          <span class="status-indicator-dot"></span> Checking Hours...
+        </span>
+        <span><i class="bi bi-geo-alt-fill highlight-amber"></i> 103 SE 1st Ave, Ocala, FL 34471</span>
+      </div>
+      <div class="top-bar-links">
+        <a href="tel:+13528778176" class="top-bar-link"><i class="bi bi-telephone-fill highlight-amber"></i> (352) 877-8176</a>
+        <a href="https://www.facebook.com/profile.php?id=100063579701301" target="_blank" rel="noopener noreferrer" class="top-bar-link" title="Facebook Profile">
+          <i class="bi bi-facebook highlight-amber"></i> 7.9K+ Followers
+        </a>
+        <a href="https://www.instagram.com/bighammockbrewery/" target="_blank" rel="noopener noreferrer" class="top-bar-link" title="Instagram Profile">
+          <i class="bi bi-instagram highlight-amber"></i> Instagram
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Sticky Header -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo-link" title="Big Hammock Brewery &amp; Bites">
+        <img src="assets/images/logo.png" alt="Big Hammock Brewery Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-name">Big Hammock</span>
+          <span class="brand-subtitle">Brewery &amp; Bites • Ocala</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="menu.html" class="nav-link ">Food Menu</a>
+        <a href="beer.html" class="nav-link ">Craft Beers</a>
+        <a href="about.html" class="nav-link ">Our Story</a>
+        <a href="order.html" class="nav-link ">Delivery &amp; Order</a>
+        <a href="events.html" class="nav-link ">Specials &amp; Events</a>
+        <a href="contact.html" class="nav-link ">Visit Us</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-primary" data-open-modal="orderModal">
+          <i class="bi bi-bag-check-fill"></i> Order Online
+        </button>
+        <button class="mobile-toggle" aria-label="Open Mobile Menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo-link">
+        <img src="assets/images/logo.png" alt="Big Hammock Brewery Logo" class="brand-logo-img">
+        <span class="brand-name" style="font-size: 1.15rem;">Big Hammock</span>
+      </div>
+      <button class="drawer-close-btn" style="background:none; border:none; color:white; font-size:1.6rem; cursor:pointer;">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="menu.html" class="nav-link ">Food Menu</a>
+      <a href="beer.html" class="nav-link ">Craft Beers On Tap</a>
+      <a href="about.html" class="nav-link ">Our Story</a>
+      <a href="order.html" class="nav-link ">Delivery &amp; Order Online</a>
+      <a href="events.html" class="nav-link ">Weekly Specials &amp; Events</a>
+      <a href="contact.html" class="nav-link ">Visit &amp; Contact</a>
+    </div>
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px;">
+      <button class="btn btn-primary" data-open-modal="orderModal" style="width:100%;">
+        <i class="bi bi-bag-check-fill"></i> Order Delivery
+      </button>
+      <a href="tel:+13528778176" class="btn btn-outline" style="width:100%;">
+        <i class="bi bi-telephone-fill"></i> Call (352) 877-8176
+      </a>
+    </div>
+  </aside>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="assets/images/gallery/brewery-front.jpg" alt="Big Hammock Brewery Front" class="hero-backdrop">
+    <div class="hero-overlay"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge-group">
+          <span class="hero-badge">
+            <i class="bi bi-geo-alt-fill"></i> Downtown Ocala, FL
+          </span>
+          <span class="review-badge-pill">
+            <i class="bi bi-hand-thumbs-up-fill"></i> 100% Recommended (560+ Reviews)
+          </span>
+        </div>
+        <h1 class="hero-title">
+          Craft Brews &amp; <br>
+          <span class="highlight-amber">Asian Street Bites</span>
+        </h1>
+        <p class="hero-subtitle">
+          Welcome to Big Hammock Brewery &amp; Bites! Ocala's premier downtown brewpub pairing bold, house-brewed craft beers with rich ramen bowls, steamed bao buns, potstickers, and artisan sandwiches.
+        </p>
+        <div class="hero-actions">
+          <a href="menu.html" class="btn btn-primary">
+            <i class="bi bi-book-half"></i> Explore Menu
+          </a>
+          <button class="btn btn-outline" data-open-modal="orderModal">
+            <i class="bi bi-bicycle"></i> Order Delivery
+          </button>
+          <a href="beer.html" class="btn btn-outline">
+            <i class="bi bi-cup-straw"></i> On-Tap Beers
+          </a>
+        </div>
+
+        <div class="hero-highlights">
+          <div class="highlight-item">
+            <span class="highlight-num">12+</span>
+            <span class="highlight-label">Craft Taps Flowing</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-num">16 hr</span>
+            <span class="highlight-label">Simmered Tonkotsu Broth</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-num">4.9 ★</span>
+            <span class="highlight-label">TripAdvisor &amp; Facebook</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-media-wrapper">
+        <div class="hero-card">
+          <img src="assets/images/food/signature-ramen.jpg" alt="Big Hammock Signature Ramen Bowl">
+          <div class="hero-card-floating-badge">
+            <div class="hcf-info">
+              <h4>Signature Tonkotsu Ramen</h4>
+              <p>Chashu pork belly, molten egg &amp; rich broth</p>
+            </div>
+            <span class="highlight-amber" style="font-weight: 800; font-size: 1.15rem;">$16.50</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Delivery Partner Integration Bar -->
+  <section class="delivery-strip" id="delivery-section">
+    <div class="delivery-strip-container">
+      <div class="delivery-headline">
+        <h3>Craving Big Hammock at Home?</h3>
+        <p>Order direct through the most popular delivery apps or call for easy curbside pickup.</p>
+      </div>
+
+      <div class="delivery-grid">
+        <a href="https://www.doordash.com/search/store/Big%20Hammock%20Brewery%20Ocala/" target="_blank" rel="noopener noreferrer" class="delivery-app-card doordash" title="Order on DoorDash">
+          <img src="assets/images/delivery/doordash.svg" alt="DoorDash Icon" class="app-icon">
+          <div class="app-info">
+            <span class="app-name">DoorDash</span>
+            <span class="app-action">Fast Delivery <i class="bi bi-arrow-right-short"></i></span>
+          </div>
+        </a>
+
+        <a href="https://www.ubereats.com/search?q=Big%20Hammock%20Brewery%20Ocala" target="_blank" rel="noopener noreferrer" class="delivery-app-card ubereats" title="Order on Uber Eats">
+          <img src="assets/images/delivery/ubereats.svg" alt="Uber Eats Icon" class="app-icon">
+          <div class="app-info">
+            <span class="app-name">Uber Eats</span>
+            <span class="app-action">Order Now <i class="bi bi-arrow-right-short"></i></span>
+          </div>
+        </a>
+
+        <a href="https://www.grubhub.com/search?queryText=Big%20Hammock%20Brewery%20Ocala" target="_blank" rel="noopener noreferrer" class="delivery-app-card grubhub" title="Order on Grubhub">
+          <img src="assets/images/delivery/grubhub.svg" alt="Grubhub Icon" class="app-icon">
+          <div class="app-info">
+            <span class="app-name">Grubhub</span>
+            <span class="app-action">Track Delivery <i class="bi bi-arrow-right-short"></i></span>
+          </div>
+        </a>
+
+        <a href="https://postmates.com/search?q=Big%20Hammock%20Brewery%20Ocala" target="_blank" rel="noopener noreferrer" class="delivery-app-card postmates" title="Order on Postmates">
+          <img src="assets/images/delivery/postmates.svg" alt="Postmates Icon" class="app-icon">
+          <div class="app-info">
+            <span class="app-name">Postmates</span>
+            <span class="app-action">On-Demand <i class="bi bi-arrow-right-short"></i></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Favorites -->
+  <section class="section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-pretitle">Handcrafted Excellence</span>
+        <h2 class="section-title">Fan Favorites from the Kitchen &amp; Tap</h2>
+        <p class="section-desc">From piping hot ramen broths and savory steamed bao to crisp IPAs and fruited sours brewed right behind the bar.</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="menu-item-card">
+          <div class="menu-item-image">
+            <img src="assets/images/food/signature-ramen.jpg" alt="Tonkotsu Ramen Bowl">
+            <span class="menu-item-price-badge">$16.50</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-tags">
+              <span class="tag-badge special">Top Rated</span>
+              <span class="tag-badge">16-Hour Broth</span>
+            </div>
+            <h3 class="menu-item-title">Traditional Tonkotsu Ramen</h3>
+            <p class="menu-item-desc">Rich pork bone broth, tender thick-cut chashu pork belly, ajitsuke egg, menma bamboo shoots, scallions, and roasted nori.</p>
+            <div class="menu-item-footer">
+              <span class="menu-item-calories">850 cal</span>
+              <button class="btn btn-outline" data-open-modal="orderModal">Order Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card">
+          <div class="menu-item-image">
+            <img src="assets/images/food/mazemen-noodles.jpg" alt="Miso Butter Mazemen">
+            <span class="menu-item-price-badge">$15.50</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-tags">
+              <span class="tag-badge special">BHB Signature</span>
+              <span class="tag-badge">Broth-less</span>
+            </div>
+            <h3 class="menu-item-title">Miso Butter Mazemen</h3>
+            <p class="menu-item-desc">Broth-less ramen noodles tossed in velvety butter miso sauce with bok choy, shiitake mushrooms, scallions, and braised pork belly.</p>
+            <div class="menu-item-footer">
+              <span class="menu-item-calories">720 cal</span>
+              <button class="btn btn-outline" data-open-modal="orderModal">Order Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card">
+          <div class="menu-item-image">
+            <img src="assets/images/food/bao-buns.jpg" alt="Braised Pork Belly Bao Buns">
+            <span class="menu-item-price-badge">$12.50</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-tags">
+              <span class="tag-badge special">Crowd Pleaser</span>
+              <span class="tag-badge">3 Buns / Order</span>
+            </div>
+            <h3 class="menu-item-title">Braised Pork Belly Bao</h3>
+            <p class="menu-item-desc">Fluffy steamed lotus buns filled with melt-in-your-mouth pork belly, pickled cucumbers, scallions, crushed peanuts, and hoisin.</p>
+            <div class="menu-item-footer">
+              <span class="menu-item-calories">580 cal</span>
+              <button class="btn btn-outline" data-open-modal="orderModal">Order Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card">
+          <div class="menu-item-image">
+            <img src="assets/images/food/hot-pretzel.jpg" alt="Giant Bavarian Pretzel with Beer Cheese">
+            <span class="menu-item-price-badge">$8.50</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-tags">
+              <span class="tag-badge">Brewpub Classic</span>
+              <span class="tag-badge">Vegetarian</span>
+            </div>
+            <h3 class="menu-item-title">Bavarian Pretzel &amp; Beer Cheese</h3>
+            <p class="menu-item-desc">Warm artisan pretzel baked golden with coarse sea salt, served with our house craft beer cheese dip and yellow mustard.</p>
+            <div class="menu-item-footer">
+              <span class="menu-item-calories">480 cal</span>
+              <button class="btn btn-outline" data-open-modal="orderModal">Order Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card">
+          <div class="menu-item-image">
+            <img src="assets/images/beers/craft-pints.jpg" alt="Big Hammock Flagship IPA">
+            <span class="menu-item-price-badge">$7.00 Pint</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-tags">
+              <span class="tag-badge special">House Brew</span>
+              <span class="tag-badge">Hoppy Citrus</span>
+            </div>
+            <h3 class="menu-item-title">Big Hammock Flagship IPA</h3>
+            <p class="menu-item-desc">American IPA loaded with Citra and Mosaic hops. Bursting with bright grapefruit, citrus zest, and tropical mango with a clean resinous finish.</p>
+            <div class="menu-item-footer">
+              <div class="beer-specs">
+                <span class="spec-badge">6.8% ABV</span>
+                <span class="spec-badge">65 IBU</span>
+              </div>
+              <a href="beer.html" class="btn btn-outline">Draft List</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card">
+          <div class="menu-item-image">
+            <img src="assets/images/food/potstickers-gyoza.jpg" alt="Pan Seared Gyoza Dumplings">
+            <span class="menu-item-price-badge">$9.00</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-tags">
+              <span class="tag-badge">Pork or Veggie</span>
+              <span class="tag-badge">Crispy Pan-Seared</span>
+            </div>
+            <h3 class="menu-item-title">Pan-Seared Gyoza (Potstickers)</h3>
+            <p class="menu-item-desc">Crispy dumplings stuffed with seasoned pork or garden vegetables, served with scallions and our spicy soy-wasabi dipping sauce.</p>
+            <div class="menu-item-footer">
+              <span class="menu-item-calories">340 cal</span>
+              <button class="btn btn-outline" data-open-modal="orderModal">Order Now</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align: center; margin-top: 50px;">
+        <a href="menu.html" class="btn btn-primary" style="padding: 14px 32px; font-size: 1.05rem;">
+          <i class="bi bi-menu-button-wide-fill"></i> View Full Food &amp; Beer Menu
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story & Philosophy -->
+  <section class="section section-darker">
+    <div class="section-container">
+      <div class="feature-split">
+        <div class="feature-content">
+          <span class="section-pretitle">The BHB Experience</span>
+          <h2>Craft Beer Culture Meets Asian Street Food</h2>
+          <p>
+            Located in historic downtown Ocala at <strong>103 SE 1st Ave</strong>, Big Hammock Brewery &amp; Bites was born from a passion for boundary-pushing brewing and unforgettable Asian comfort food.
+          </p>
+          <p>
+            We believe nothing complements a crisp, hop-forward IPA or rich nitro porter quite like the complex, savory depths of authentic Japanese ramen, succulent bao buns, and zesty Asian street appetizers.
+          </p>
+
+          <div class="feature-points">
+            <div class="feature-point">
+              <div class="fp-icon"><i class="bi bi-fire"></i></div>
+              <div class="fp-text">
+                <h4>Scratch Kitchen</h4>
+                <p>Broths simmered for 16+ hours and pork roasted daily.</p>
+              </div>
+            </div>
+            <div class="feature-point">
+              <div class="fp-icon"><i class="bi bi-droplet-half"></i></div>
+              <div class="fp-text">
+                <h4>Small-Batch Taps</h4>
+                <p>Fresh ales, lagers, sours, and seasonal flights.</p>
+              </div>
+            </div>
+            <div class="feature-point">
+              <div class="fp-icon"><i class="bi bi-sun"></i></div>
+              <div class="fp-text">
+                <h4>Outdoor Patio &amp; Bar</h4>
+                <p>Relaxed downtown vibe with friendly table service.</p>
+              </div>
+            </div>
+            <div class="feature-point">
+              <div class="fp-icon"><i class="bi bi-box-seam"></i></div>
+              <div class="fp-text">
+                <h4>Crowlers To-Go</h4>
+                <p>32oz fresh-canned craft beer sealed cold for home.</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="about.html" class="btn btn-outline">Read Our Full Story</a>
+            <button class="btn btn-primary" data-open-modal="reservationModal">Reserve a Table / Event</button>
+          </div>
+        </div>
+
+        <div class="feature-media-grid">
+          <div class="fmg-img-1">
+            <img src="assets/images/beers/taproom-bar.jpg" alt="BHB Taproom and Bar Counters">
+          </div>
+          <div class="fmg-img-2">
+            <img src="assets/images/gallery/patio-outdoor.jpg" alt="Outdoor Patio Dining">
+          </div>
+          <div class="fmg-img-3">
+            <img src="assets/images/beers/beer-flight.jpg" alt="Craft Beer Tasting Flight">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-pretitle">Guest Love</span>
+        <h2 class="section-title">What Downtown Ocala Is Saying</h2>
+        <p class="section-desc">Over 560 verified reviews on Facebook &amp; TripAdvisor with a 100% recommendation score.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <p class="review-text">
+            "Hands down the best ramen in Central Florida! The broth is so rich and full of flavor, and their pork belly melts in your mouth. Pair it with their flagship IPA and you have the perfect meal."
+          </p>
+          <div class="review-author">
+            <div class="author-avatar">M</div>
+            <div class="author-info">
+              <h5>Marcus T.</h5>
+              <span>Facebook Verified Review • Local Guide</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <p class="review-text">
+            "We were visiting Ocala and found this gem downtown. The bao buns are unreal, and having world-class craft beer brewed right on site makes it an unbeatable vibe. Super friendly staff!"
+          </p>
+          <div class="review-author">
+            <div class="author-avatar">S</div>
+            <div class="author-info">
+              <h5>Sarah &amp; Dave K.</h5>
+              <span>TripAdvisor Review • 5 Stars</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <p class="review-text">
+            "The Mazemen brothless noodles and Asian Philly cheesesteak are genius creations. Great outdoor seating, fast delivery via DoorDash, and growlers to take home. Highly recommend!"
+          </p>
+          <div class="review-author">
+            <div class="author-avatar">J</div>
+            <div class="author-info">
+              <h5>Jessica L.</h5>
+              <span>Wheree Local Community Review</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery -->
+  <section class="section section-darker" style="padding-bottom: 60px;">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-pretitle">Visual Tour</span>
+        <h2 class="section-title">Life Inside Big Hammock</h2>
+        <p class="section-desc">Click any photo to view in high resolution.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="assets/images/gallery/brewery-front.jpg" alt="Big Hammock Brewery Storefront in Downtown Ocala">
+          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/beers/taproom-bar.jpg" alt="Taproom Bar Counter &amp; Taps">
+          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/food/bao-buns.jpg" alt="Trio of Braised Pork Belly Bao Buns">
+          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/food/signature-ramen.jpg" alt="Steaming Bowl of Fresh Tonkotsu Ramen">
+          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/gallery/patio-outdoor.jpg" alt="Sunny Outdoor Patio Seating in Ocala">
+          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/food/hot-pretzel.jpg" alt="Bavarian Hot Pretzel with Beer Cheese">
+          <div class="gallery-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Big Call To Action -->
+  <section class="section" style="padding-top: 20px;">
+    <div class="section-container">
+      <div class="cta-banner">
+        <div class="cta-content">
+          <h2 class="cta-title">Ready for Your Next Flavor Adventure?</h2>
+          <p class="cta-text">
+            Join us at the taproom for cold pints and warm ramen, or order online through DoorDash, Uber Eats, Grubhub, and Postmates.
+          </p>
+          <div class="cta-buttons">
+            <button class="btn btn-primary" data-open-modal="orderModal">
+              <i class="bi bi-bicycle"></i> Order Delivery Now
+            </button>
+            <a href="tel:+13528778176" class="btn btn-outline">
+              <i class="bi bi-telephone-fill"></i> Call (352) 877-8176
+            </a>
+            <a href="contact.html" class="btn btn-outline">
+              <i class="bi bi-map-fill"></i> Get Directions
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="brand-logo-link" style="margin-bottom: 14px;">
+          <img src="assets/images/logo.png" alt="Big Hammock Brewery Logo" class="brand-logo-img footer-logo">
+          <div class="brand-text">
+            <span class="brand-name" style="font-size: 1.45rem;">Big Hammock</span>
+            <span class="brand-subtitle">Brewery &amp; Bites • Ocala, FL</span>
+          </div>
+        </a>
+        <p>
+          A craft brewpub nestled in beautiful historic Downtown Ocala. Handcrafted beers, authentic ramen bowls, steamed bao buns, and Asian-fusion comfort bites.
+        </p>
+                <div class="footer-social-links">
+          <a href="https://www.facebook.com/profile.php?id=100063579701301" target="_blank" rel="noopener noreferrer" class="social-btn facebook" title="Big Hammock on Facebook">
+            <img src="assets/images/social/facebook.svg" alt="Facebook">
+          </a>
+          <a href="https://www.instagram.com/bighammockbrewery/" target="_blank" rel="noopener noreferrer" class="social-btn instagram" title="Big Hammock on Instagram">
+            <img src="assets/images/social/instagram.svg" alt="Instagram">
+          </a>
+          <a href="https://www.tripadvisor.com/Restaurant_Review-g34496-d17503334-Reviews-Big_Hammock_Brewery_Bites-Ocala_Florida.html" target="_blank" rel="noopener noreferrer" class="social-btn tripadvisor" title="Big Hammock on TripAdvisor">
+            <img src="assets/images/social/tripadvisor.svg" alt="TripAdvisor">
+          </a>
+          <a href="https://untappd.com/v/big-hammock-brewery-and-bites/8500204" target="_blank" rel="noopener noreferrer" class="social-btn untappd" title="Big Hammock on Untappd">
+            <img src="assets/images/social/untappd.svg" alt="Untappd">
+          </a>
+          <a href="https://www.yelp.com/biz/big-hammock-brewery-and-bites-ocala" target="_blank" rel="noopener noreferrer" class="social-btn yelp" title="Big Hammock on Yelp">
+            <img src="assets/images/social/yelp.svg" alt="Yelp">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Food &amp; Bites Menu</a></li>
+          <li><a href="beer.html">On-Tap Craft Beers</a></li>
+          <li><a href="about.html">About Big Hammock</a></li>
+          <li><a href="order.html">Delivery &amp; Pickup</a></li>
+          <li><a href="events.html">Events &amp; Trivia</a></li>
+          <li><a href="contact.html">Hours &amp; Location</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Taproom Hours</h4>
+        <table class="hours-table">
+          <tr data-day="1"><td class="day">Monday</td><td class="time">Closed</td></tr>
+          <tr data-day="2"><td class="day">Tuesday</td><td class="time">11:00 AM – 9:00 PM</td></tr>
+          <tr data-day="3"><td class="day">Wednesday</td><td class="time">11:00 AM – 9:00 PM</td></tr>
+          <tr data-day="4"><td class="day">Thursday</td><td class="time">11:00 AM – 9:00 PM</td></tr>
+          <tr data-day="5"><td class="day">Friday</td><td class="time">11:00 AM – 10:00 PM</td></tr>
+          <tr data-day="6"><td class="day">Saturday</td><td class="time">11:00 AM – 10:00 PM</td></tr>
+          <tr data-day="0"><td class="day">Sunday</td><td class="time">Closed</td></tr>
+        </table>
+      </div>
+
+      <div class="footer-col">
+        <h4>Find &amp; Contact Us</h4>
+        <ul class="contact-info-list">
+          <li>
+            <i class="bi bi-geo-alt-fill ci-icon"></i>
+            <div>
+              <strong>Big Hammock Brewery &amp; Bites</strong><br>
+              103 SE 1st Ave, Ocala, FL 34471<br>
+              Marion County, Florida
+            </div>
+          </li>
+          <li>
+            <i class="bi bi-telephone-fill ci-icon"></i>
+            <div>
+              <a href="tel:+13528778176" style="color:var(--text-main); font-weight: 600;">+1 (352) 877-8176</a><br>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">Curbside pickup &amp; draft questions</span>
+            </div>
+          </li>
+          <li>
+            <i class="bi bi-bag-check-fill ci-icon"></i>
+            <div>
+              <strong>Delivery Partners</strong><br>
+              DoorDash • Uber Eats • Grubhub • Postmates
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Big Hammock Brewery &amp; Bites. All rights reserved.</p>
+      <p>Brewed with pride in Historic Downtown Ocala, Florida.</p>
+    </div>
+  </footer>
+
+  <!-- Delivery Order Modal -->
+  <div class="modal-backdrop" id="orderModal">
+    <div class="modal-box">
+      <button class="modal-close" data-close-modal><i class="bi bi-x"></i></button>
+      <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+        <img src="assets/images/logo.png" alt="Big Hammock Brewery Logo" class="modal-logo">
+        <div>
+          <h3 class="modal-title" style="margin:0;">Order Delivery &amp; Pickup</h3>
+          <span style="font-size: 0.82rem; color: var(--amber); font-weight: 600;">Big Hammock Brewery &amp; Bites</span>
+        </div>
+      </div>
+      <p class="modal-desc">Select your favorite delivery app below or call our taproom for direct curbside pickup!</p>
+      <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px;">
+        <a href="https://www.doordash.com/search/store/Big%20Hammock%20Brewery%20Ocala/" target="_blank" rel="noopener noreferrer" class="delivery-app-card doordash" style="padding: 14px;">
+          <img src="assets/images/delivery/doordash.svg" alt="DoorDash" class="app-icon" style="width: 36px; height: 36px;">
+          <div class="app-info" style="flex-grow: 1;">
+            <span class="app-name" style="font-size: 1.05rem;">Order on DoorDash</span>
+            <span class="app-action">Standard &amp; DashPass Delivery</span>
+          </div>
+          <i class="bi bi-box-arrow-up-right highlight-amber"></i>
+        </a>
+        <a href="https://www.ubereats.com/search?q=Big%20Hammock%20Brewery%20Ocala" target="_blank" rel="noopener noreferrer" class="delivery-app-card ubereats" style="padding: 14px;">
+          <img src="assets/images/delivery/ubereats.svg" alt="Uber Eats" class="app-icon" style="width: 36px; height: 36px;">
+          <div class="app-info" style="flex-grow: 1;">
+            <span class="app-name" style="font-size: 1.05rem;">Order on Uber Eats</span>
+            <span class="app-action">Fast local courier delivery</span>
+          </div>
+          <i class="bi bi-box-arrow-up-right highlight-amber"></i>
+        </a>
+        <a href="https://www.grubhub.com/search?queryText=Big%20Hammock%20Brewery%20Ocala" target="_blank" rel="noopener noreferrer" class="delivery-app-card grubhub" style="padding: 14px;">
+          <img src="assets/images/delivery/grubhub.svg" alt="Grubhub" class="app-icon" style="width: 36px; height: 36px;">
+          <div class="app-info" style="flex-grow: 1;">
+            <span class="app-name" style="font-size: 1.05rem;">Order on Grubhub</span>
+            <span class="app-action">Track driver in real-time</span>
+          </div>
+          <i class="bi bi-box-arrow-up-right highlight-amber"></i>
+        </a>
+        <a href="https://postmates.com/search?q=Big%20Hammock%20Brewery%20Ocala" target="_blank" rel="noopener noreferrer" class="delivery-app-card postmates" style="padding: 14px;">
+          <img src="assets/images/delivery/postmates.svg" alt="Postmates" class="app-icon" style="width: 36px; height: 36px;">
+          <div class="app-info" style="flex-grow: 1;">
+            <span class="app-name" style="font-size: 1.05rem;">Order on Postmates</span>
+            <span class="app-action">Anytime delivery</span>
+          </div>
+          <i class="bi bi-box-arrow-up-right highlight-amber"></i>
+        </a>
+      </div>
+      <div style="background: var(--bg-dark); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 14px; text-align: center;">
+        <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 6px;">Calling ahead for pickup or growler fills?</p>
+        <a href="tel:+13528778176" class="btn btn-outline" style="width: 100%;">
+          <i class="bi bi-telephone-fill"></i> Call Taproom: (352) 877-8176
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reservation Modal -->
+  <div class="modal-backdrop" id="reservationModal">
+    <div class="modal-box">
+      <button class="modal-close" data-close-modal><i class="bi bi-x"></i></button>
+      <h3 class="modal-title">Reserve a Table or Host an Event</h3>
+      <p class="modal-desc">Planning a family dinner, birthday, or private gathering? Send us your request.</p>
+      <form id="reservation-form">
+        <div class="form-group">
+          <label class="form-label">Full Name</label>
+          <input type="text" class="form-input" placeholder="e.g. Alex Henderson" required>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+          <div class="form-group">
+            <label class="form-label">Phone Number</label>
+            <input type="tel" class="form-input" placeholder="(352) 555-0199" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Party Size</label>
+            <select class="form-select" required>
+              <option value="2">2 Guests</option>
+              <option value="3-4">3 - 4 Guests</option>
+              <option value="5-8">5 - 8 Guests</option>
+              <option value="9+">9+ (Large Party / Event)</option>
+            </select>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+          <div class="form-group">
+            <label class="form-label">Date</label>
+            <input type="date" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Time</label>
+            <input type="time" class="form-input" value="18:30" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Special Requests</label>
+          <textarea class="form-textarea" rows="2" placeholder="Patio seating, dietary notes, celebration..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 12px;">Submit Reservation</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div class="modal-backdrop" id="lightboxModal">
+    <div style="position: relative; max-width: 900px; width: 100%; text-align: center;">
+      <button class="modal-close" data-close-modal style="top: -40px; right: 0; color: white; font-size: 2rem;">
+        <i class="bi bi-x"></i>
+      </button>
+      <img src="" alt="" class="lightbox-img" style="max-height: 80vh; max-width: 100%; border-radius: 12px; box-shadow: var(--shadow-md); margin: 0 auto;">
+      <p class="lightbox-caption" style="color: var(--text-secondary); margin-top: 12px; font-weight: 500; font-size: 1rem;"></p>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/menu-data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

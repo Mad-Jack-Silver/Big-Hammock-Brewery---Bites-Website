@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <rect width="100" height="100" rx="22" fill="#F63440"/>
+  <g fill="#FFFFFF">
+    <!-- Grubhub House / Diner Roof and Structure -->
+    <path d="M50 16L18 41.5v39c0 2 1.6 3.5 3.5 3.5h57c2 0 3.5-1.5 3.5-3.5v-39L50 16zm24 61H26V44l24-19 24 19v33z"/>
+    <!-- Fork (Left side) -->
+    <path d="M38.5 46v12c0 2.2 1.5 4 3.5 4.5V74h3V62.5c2-.5 3.5-2.3 3.5-4.5V46h-2v9h-1.5v-9h-2v9H41v-9h-2.5z"/>
+    <!-- Knife (Right side) -->
+    <path d="M53 46v28h3V60h2.5c3 0 5-2.5 5-5.5V46h-10.5zm3 3h4.5c1.5 0 2.5 1.2 2.5 2.5s-1 2.5-2.5 2.5H56v-5z"/>
+  </g>
+</svg>
