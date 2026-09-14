@@ -16,7 +16,7 @@
 
 Experience the live application deployed on Vercel:
 
-### 🚀 **[https://big-hammock-brewery.vercel.app](https://big-hammock-brewery.vercel.app)**
+### 🚀 **[https://big-hammock-brewery-bites-website.vercel.app/](https://big-hammock-brewery-bites-website.vercel.app/)**
 
 *(If your project is deployed under a customized Vercel URL, replace the link above with your personal deployment link)*
 
